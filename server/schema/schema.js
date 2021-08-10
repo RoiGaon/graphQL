@@ -184,7 +184,7 @@ const Mutation = new GraphQLObjectType({
         id: { type: new GraphQLNonNull(GraphQLString) },
       },
       resolve(parent, args) {
-        // exec meand execute immediately
+        // exec means execute immediately
         let removedUser = User.findByIdAndRemove(args.id).exec();
 
         if (!removedUser) {
