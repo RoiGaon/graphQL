@@ -8,7 +8,7 @@ const cors = require("cors");
 const app = express();
 
 mongoose
-  .connect("mongodb+srv://roigaon:roigaon@cluster0.1c1s5.mongodb.net/test", {
+  .connect("mongodb+srv://username@cluster0.1c1s5.mongodb.net/test", {
     useNewUrlParser: true,
     useUnifiedTopology: true,
   })
